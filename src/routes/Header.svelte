@@ -1,12 +1,12 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
+	import logo from '$lib/images/HH_LogoType.png';
 	import LoginLogo from '$lib/images/LogIn.svelte';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
+		<a href="/">
 			<img src={logo} alt="SvelteKit" />
 		</a>
 	</div>
@@ -55,9 +55,9 @@
 	}
 
 	.corner img {
-		width: 2em;
-		height: 2em;
+		width: 200px;
 		object-fit: contain;
+		padding-left: 150px;
 	}
 
 	/* nav {

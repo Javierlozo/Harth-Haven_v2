@@ -6,7 +6,11 @@
 {#if showModal}
 	<div class="modal">
 		<div class="modal-content">
-			<div class="title-report">Filters</div>
+			<div class="flex align-middle">
+				<div />
+				<div class="title-report">Filters</div>
+				<button class="cancelButton" on:click={() => (showModal = false)}> X </button>
+			</div>
 			<hr />
 			<div class="title">Price range</div>
 			<div>Price range</div>
@@ -44,7 +48,6 @@
 			<div class="title">Languages</div>
 			<div>Price range</div>
 			<div class="flex">
-				<button class="cancelButton" on:click={() => (showModal = false)}> X </button>
 				<button class="submitButton" on:click={() => (showModal = false)}> Submit </button>
 			</div>
 		</div>
@@ -118,5 +121,13 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 10px;
+	}
+	.cancelButton:hover {
+		cursor: pointer;
+		color: red; /* Change color on hover */
+	}
+	.submitButton:hover {
+		cursor: pointer;
+		background-color: #5b9e2d; /* Darken the background color on hover */
 	}
 </style>

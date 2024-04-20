@@ -8,32 +8,32 @@
 	import FilterModal from '$lib/components/FilterModal.svelte';
 	import filter from '$lib/images/filter-32.png';
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
+	import { onDestroy } from 'svelte';
+	import { createSearchStore, searchHandler } from '$lib/stores/search';
 
 	// Modal
 	let showModal = false;
 
-	const cards = [
-		{
-			id: '657483434',
-			title: 'Wellmore of Daniel Island',
-			price: '$800 per month',
-			imageUrl: 'https://well-more.com/wm/images/hero/webp/nobadge-wlx-hero.webp'
-		},
-		{
-			id: '348694',
-			title: 'Ashley Gardens Assisted Living & Memory Care',
-			price: '$1,000 per month',
-			imageUrl:
-				'https://lh5.googleusercontent.com/p/AF1QipPm0OFIzRvGBUe3kxrN1WquY_NVlLrBxpD8wnEr=w260-h175-n-k-no'
-		},
-		{
-			id: '234553',
-			title: 'Evergreen Residential Care',
-			price: '$950 per month',
-			imageUrl:
-				'https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=zqTImEOc2DRRIu39yKI-tg&cb_client=search.gws-prod.gps&yaw=347.26736&pitch=0&thumbfov=100&w=260&h=175'
-		}
-	];
+	// exports
+	export let data;
+
+	const searchProducts = data.homes.map((home) => ({
+		...home,
+		searchTerms: `${home.id} ${home.title} ${home.price}`
+	}));
+
+	const searchStore = createSearchStore(searchProducts);
+
+	const unsubscribe = searchStore.subscribe((model) => {
+		searchHandler(model);
+	});
+
+	$: filteredHomes = $searchStore.filtered;
+
+	onDestroy(() => {
+		unsubscribe();
+	});
 </script>
 
 <svelte:head>
@@ -68,13 +68,59 @@
 </section>
 
 <!-- SECTION 3 - CONTACT -->
-<section class="section3">
+<!-- <section class="section3">
 	<div class="cardComponent">
-		{#each cards as card}
+		{#each data as card}
 			<Card {...card} />
 		{/each}
 	</div>
-</section>
+</section> -->
+
+<div class="p-5">
+	<div class="flex items-center justify-between">
+		<form>
+			<label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only"
+				>Search</label
+			>
+			<div class="relative">
+				<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+					<svg
+						class="w-4 h-4 text-black"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 20 20"
+						><path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+						/></svg
+					>
+				</div>
+				<input
+					type="search"
+					id="default-search"
+					class="block w-96 p-2 pl-12 text-sm text-black border border-gray-300 rounded-3xl bg-white focus:ring-green-500 focus:border-green-500"
+					placeholder="Search"
+					required
+					bind:value={$searchStore.search}
+				/>
+			</div>
+		</form>
+	</div>
+
+	<div
+		class="grid grid-cols-1 gap-5 content-evenly sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 mt-8"
+	>
+		{#each filteredHomes as home (home.id)}
+			<button on:click={() => goto(`/${home.id}`)}>
+				<Card {home} />
+			</button>
+		{/each}
+	</div>
+</div>
 
 <FilterModal bind:showModal />
 

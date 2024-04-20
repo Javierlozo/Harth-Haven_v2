@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import { enhance } from '$app/forms';
 
 	import { reduced_motion } from './reduced-motion';
@@ -393,4 +393,4 @@
 			transform: translateX(0);
 		}
 	}
-</style>
+</style> -->

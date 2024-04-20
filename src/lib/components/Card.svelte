@@ -7,13 +7,13 @@
     <img src="{home.imageUrl}" alt="{home.title}" class="image" />
   </div>
   <div class="card-title">
-    <div class="text-gray-400 text-4xl mt-1">
+    <div class="cardTitle">
       {home.title}
     </div>
-    <div class="text-gray-400 text-4xl mt-1">
+    <div class="cardPrice">
       {home.price}
     </div>
-    <div class="text-gray-400 text-4xl mt-1">
+    <div class="cardContent">
       {home.content}
     </div>
   </div>
@@ -23,7 +23,7 @@
   .card {
     text-decoration: none;
     color: inherit;
-    width: 100%; /* Ensure the entire card is clickable */
+    width: 100%;
   }
 
   .card-image {
@@ -43,7 +43,7 @@
   .image {
     width: 100%; /* Make the image occupy the entire width of its container */
     height: 100%; /* Make the image occupy the entire height of its container */
-    object-fit: cover; /* Ensure the image covers the entire space */
+    object-fit: cover;
   }
 
   .card-title {

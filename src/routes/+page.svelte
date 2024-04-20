@@ -137,7 +137,6 @@
 			align-items: center;
 		}
 	}
-
 	@media only screen and (max-width: 480px) {
 		.cardComponent {
 			flex-direction: column;

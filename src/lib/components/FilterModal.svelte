@@ -44,7 +44,7 @@
 			<div class="title">Languages</div>
 			<div>Price range</div>
 			<div class="flex">
-				<button on:click={() => (showModal = false)}> X </button>
+				<button class="cancelButton" on:click={() => (showModal = false)}> X </button>
 				<button class="submitButton" on:click={() => (showModal = false)}> Submit </button>
 			</div>
 		</div>
@@ -95,14 +95,9 @@
 		margin-top: 20px; /* Add margin between the buttons */
 	}
 	.cancelButton {
-		color: white;
-		height: 50px;
-		width: 180px;
-		background-color: #c85252;
-		font-weight: bold;
-		border-radius: 10px;
 		border: none;
-		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+		font-weight: bold;
+		background: none;
 	}
 	.submitButton {
 		color: white;

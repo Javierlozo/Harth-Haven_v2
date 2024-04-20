@@ -3,6 +3,20 @@
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 	import Card from '$lib/components/Card.svelte';
+	import FilterModal from '$lib/components/FilterModal.svelte';
+	import filter from '$lib/images/filter-32.png';
+	import { onMount } from 'svelte';
+
+	// Modal
+	let showModal = false;
+
+	let isOpen = false;
+
+	function toggleDropdown() {
+		isOpen = !isOpen;
+	}
+
+	let selectedTrainee = {};
 
 	const cards = [
 		{
@@ -53,7 +67,30 @@
 
 <!-- SECTION 2 - FORM -->
 <section class="section2">
-	<h1>SECTION2</h1>
+	<div class="dropdownBar">
+		{#each [selectedTrainee] as item, index}
+			<div class="dropdown">
+				<button class="dropdown1" on:click={() => toggleDropdown()}>
+					<div>{index === 0 ? item.name : item}</div>
+				</button>
+				{#if isOpen}
+					<div class="dropdown-content">
+						{#if index === 0}
+							{#each trainees as trainee}
+								<button class="dropdown-item" on:click={() => handleItemClick(trainee)}
+									>{trainee.name}</button
+								>
+							{/each}
+						{/if}
+					</div>
+				{/if}
+			</div>
+		{/each}
+	</div>
+	<button class="filterButton" on:click={() => (showModal = true)}>
+		<img src={filter} alt="Welcome" height="30px" />
+		<div>Filters</div>
+	</button>
 </section>
 
 <!-- SECTION 3 - CONTACT -->
@@ -64,6 +101,8 @@
 		{/each}
 	</div>
 </section>
+
+<FilterModal bind:showModal />
 
 <style>
 	section {
@@ -96,16 +135,40 @@
 		top: 0;
 		display: block;
 	} */
-	.section1 {
-		background-color: azure;
-	}
-	.section2 {
-		background-color: burlywood;
-	}
 	.section3 {
 		display: flex;
+		padding-top: 40px;
 	}
-
+	.filterButton {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: black;
+		height: 50px;
+		width: 100px;
+		font-weight: bold;
+		border: none;
+		border-radius: 10px;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+		gap: 5px;
+		transition: background-color 0.3s ease; /* Adding transition for smooth effect */
+	}
+	.filterButton:hover {
+		background-color: lightgray; /* Change the background color on hover */
+	}
+	.dropdown1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: 10px;
+		padding: 10px;
+		background-color: white;
+		color: #666666;
+		width: 250px;
+		font-weight: bold;
+		@apply relative;
+	}
 	/* Media query for screens between 480px and 1200px */
 	@media only screen and (min-width: 481px) and (max-width: 1300px) {
 		.cardComponent {

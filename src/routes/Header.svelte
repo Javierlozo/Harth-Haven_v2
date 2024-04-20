@@ -11,7 +11,7 @@
 		</a>
 	</div>
 
-	<nav>
+	<!-- <nav>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
@@ -23,7 +23,7 @@
 				<a href="/sverdle">Sverdle</a>
 			</li>
 		</ul>
-	</nav>
+	</nav> -->
 
 	<div class="corner">
 		<a href="/">
@@ -40,8 +40,10 @@
 	}
 
 	.corner {
-		width: 3em;
-		height: 3em;
+		width: 50px;
+		height: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	.corner a {
@@ -58,7 +60,7 @@
 		object-fit: contain;
 	}
 
-	nav {
+	/* nav {
 		display: flex;
 		justify-content: center;
 	}
@@ -115,7 +117,7 @@
 		letter-spacing: 0.1em;
 		text-decoration: none;
 		transition: color 0.2s linear;
-	}
+	} */
 
 	a:hover {
 		color: var(--color-theme-1);

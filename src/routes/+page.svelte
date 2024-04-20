@@ -43,7 +43,7 @@
 			</picture>
 		</span> -->
 
-		WELCOME TO<br /> TO HAVEN HEARTH
+		WELCOME TO<br /> TO HEARTH HAVEN
 	</h1>
 
 	<!-- <h2>
@@ -104,5 +104,20 @@
 	}
 	.section3 {
 		display: flex;
+	}
+
+	/* Media query for screens between 480px and 1200px */
+	@media only screen and (min-width: 481px) and (max-width: 1300px) {
+		.cardComponent {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		.cardComponent {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 </style>

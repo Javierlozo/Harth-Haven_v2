@@ -10,7 +10,6 @@
   import { goto } from '$app/navigation';
   import { onDestroy } from 'svelte';
   import { createSearchStore, searchHandler } from '$lib/stores/search';
-  import '../app.css';
 
   // Modal
   let showModal = false;
@@ -60,13 +59,13 @@
   />
 
   <button class="filterButton" on:click="{() => (showModal = true)}">
-    <img src="{filter}" alt="Welcome" height="30px" />
+    <img src="{filter}" alt="Welcome" />
     <div>Filters</div>
   </button>
 </section>
 
 <!-- SECTION 3 -->
-<section class="section3">
+<section>
   <div class="cardComponent">
     {#each filteredHomes as home (home.id)}
       <Card home="{home}" />
@@ -91,13 +90,17 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     height: 40px;
   }
-  h1 {
-    width: 100%;
-  }
   .cardComponent {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    align-content: space-evenly;
+    margin-top: 100px;
+  }
+  .section1 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
     gap: 20px;
   }
   .section2 {
@@ -105,10 +108,6 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
-  }
-  .section3 {
-    display: flex;
-    padding-top: 40px;
   }
   .filterButton {
     display: flex;
@@ -125,10 +124,13 @@
     transition: background-color 0.3s ease;
     background-color: white;
   }
+  .filterButton img {
+    height: 26px;
+  }
   .filterButton:hover {
     background-color: lightgray;
   }
-  @media only screen and (min-width: 481px) and (max-width: 1300px) {
+  /* @media only screen and (min-width: 481px) and (max-width: 1300px) {
     .cardComponent {
       flex-direction: column;
       align-items: center;
@@ -139,5 +141,5 @@
       flex-direction: column;
       align-items: center;
     }
-  }
+  } */
 </style>

@@ -1,17 +1,17 @@
 <script>
-	import { page } from '$app/stores';
-	import logo from '$lib/images/HH_LogoType.png';
-	import LoginLogo from '$lib/images/LogIn.svelte';
+  import { page } from '$app/stores';
+  import logo from '$lib/images/HH_LogoType.png';
+  import LoginLogo from '$lib/images/LogIn.svelte';
 </script>
 
 <header>
-	<div class="corner">
-		<a href="/">
-			<img src={logo} alt="SvelteKit" />
-		</a>
-	</div>
+  <div class="corner">
+    <a href="/">
+      <img src="{logo}" alt="SvelteKit" />
+    </a>
+  </div>
 
-	<!-- <nav>
+  <!-- <nav>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
@@ -25,42 +25,42 @@
 		</ul>
 	</nav> -->
 
-	<div class="corner">
-		<a href="/">
-			<LoginLogo width={100} height={100} fillColor="#000000" />
-		</a>
-	</div>
+  <div class="corner">
+    <a href="/">
+      <LoginLogo fillColor="#000000" />
+    </a>
+  </div>
 </header>
 
 <style>
-	header {
-		display: flex;
-		justify-content: space-between;
-		background-color: bisque;
-	}
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+  }
 
-	.corner {
-		width: 50px;
-		height: 50px;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+  .corner {
+    width: 50px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
+  .corner a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
 
-	.corner img {
-		width: 200px;
-		object-fit: contain;
-		padding-left: 150px;
-	}
+  .corner img {
+    width: 200px;
+    object-fit: contain;
+    padding-left: 150px;
+  }
 
-	/* nav {
+  /* nav {
 		display: flex;
 		justify-content: center;
 	}
@@ -119,7 +119,7 @@
 		transition: color 0.2s linear;
 	} */
 
-	a:hover {
-		color: var(--color-theme-1);
-	}
+  a:hover {
+    color: var(--color-theme-1);
+  }
 </style>

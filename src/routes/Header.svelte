@@ -26,7 +26,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="/login">
+		<a href="/">
 			<LoginLogo width={100} height={100} fillColor="#000000" />
 		</a>
 	</div>

@@ -2,6 +2,25 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import Card from '$lib/components/Card.svelte';
+
+	const cards = [
+		{
+			title: 'Wellmore of Daniel Island',
+			price: '$800 per month',
+			imageUrl: 'https://well-more.com/wm/images/hero/webp/nobadge-wlx-hero.webp'
+		},
+		{
+			title: 'Wellmore of Daniel Island',
+			price: '$800 per month',
+			imageUrl: 'https://well-more.com/wm/images/hero/webp/nobadge-wlx-hero.webp'
+		},
+		{
+			title: 'Wellmore of Daniel Island',
+			price: '$800 per month',
+			imageUrl: 'https://well-more.com/wm/images/hero/webp/nobadge-wlx-hero.webp'
+		}
+	];
 </script>
 
 <svelte:head>
@@ -34,12 +53,11 @@
 
 <!-- SECTION 3 - CONTACT -->
 <section class="section3">
-	<h1>SECTION3</h1>
-</section>
-
-<section class="section4">
-	<h1>SECTION4</h1>
-	<!-- <Counter /> -->
+	<div class="cardComponent">
+		{#each cards as card}
+			<Card {...card} />
+		{/each}
+	</div>
 </section>
 
 <style>
@@ -50,26 +68,30 @@
 		align-items: center;
 		flex: 0.6;
 	}
-
 	h1 {
 		width: 100%;
 	}
-
-	.welcome {
+	.cardComponent {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 20px;
+		margin-bottom: 40px;
+	}
+	/* .welcome {
 		display: block;
 		position: relative;
 		width: 100%;
 		height: 0;
 		padding: 0 0 calc(100% * 495 / 2048) 0;
 	}
-
 	.welcome img {
 		position: absolute;
 		width: 100%;
 		height: 100%;
 		top: 0;
 		display: block;
-	}
+	} */
 	.section1 {
 		background-color: azure;
 	}
@@ -78,8 +100,9 @@
 	}
 	.section3 {
 		background-color: gray;
-	}
-	.section4 {
-		background-color: green;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
 	}
 </style>

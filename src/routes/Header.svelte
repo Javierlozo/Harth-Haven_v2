@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
+	import LoginLogo from '$lib/images/LogIn.svelte';
 </script>
 
 <header>
@@ -26,8 +26,8 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub" />
+		<a href="/login">
+			<LoginLogo width={100} height={100} fillColor="#000000" />
 		</a>
 	</div>
 </header>

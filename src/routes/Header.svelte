@@ -1,7 +1,7 @@
 <script>
   import { page } from '$app/stores';
   import Logo from '$lib/images/HH_LogoType.png';
-  import LoginLogo from '$lib/images/LogIn.svelte';
+  import LoginLogo from '$lib/images/persona4.png';
 </script>
 
 <header>
@@ -27,7 +27,7 @@
 
   <div class="corner">
     <a href="/">
-      <LoginLogo fillColor="#000000" />
+      <img src="{LoginLogo}" alt="Logo" />
     </a>
   </div>
 </header>
@@ -53,7 +53,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 80%;
   }
   .logo {
     width: 150px;

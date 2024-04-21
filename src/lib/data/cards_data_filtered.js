@@ -1,9 +1,9 @@
 export const cardsDataFiltered = [
   {
     id: '4',
-    title: 'Bishop Retirement Community',
+    title: 'Bishop Retirement',
     cost: '4,000',
-    living: ['independent', 'memory care', 'skilled nursing'],
+    living: ['independent', 'assisted', 'memory care', 'skilled nursing'],
     rating: '4.9 (9)',
     imageUrl:
       'https://scjeda.com/assets/uploads/2023/03/banner-Bishop-Gadsden-2023.jpg',

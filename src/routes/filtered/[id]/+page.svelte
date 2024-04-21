@@ -77,7 +77,7 @@
   <div class="grid grid-cols-2 gap-8">
     <div class="amenity flex">
       <img
-        src="https://banner2.cleanpng.com/20180628/uyg/kisspng-check-mark-desktop-wallpaper-united-states-clip-ar-mace-5b35a3d2e8ccf8.5158420815302420029536.jpg"
+        src="https://e7.pngegg.com/pngimages/697/297/png-clipart-checkbox-icon-checkbox-button-tick-box-angle-text-thumbnail.png"
         alt="Pickleball Court"
         class="amenity-logo h-5"
       />
@@ -85,7 +85,7 @@
     </div>
     <div class="amenity flex">
       <img
-        src="https://banner2.cleanpng.com/20180628/uyg/kisspng-check-mark-desktop-wallpaper-united-states-clip-ar-mace-5b35a3d2e8ccf8.5158420815302420029536.jpg"
+        src="https://e7.pngegg.com/pngimages/697/297/png-clipart-checkbox-icon-checkbox-button-tick-box-angle-text-thumbnail.png"
         alt="Swimming Pool"
         class="amenity-logo h-5"
       />
@@ -93,7 +93,7 @@
     </div>
     <div class="amenity flex">
       <img
-        src="https://banner2.cleanpng.com/20180628/uyg/kisspng-check-mark-desktop-wallpaper-united-states-clip-ar-mace-5b35a3d2e8ccf8.5158420815302420029536.jpg"
+        src="https://e7.pngegg.com/pngimages/697/297/png-clipart-checkbox-icon-checkbox-button-tick-box-angle-text-thumbnail.png"
         alt="Swimming Pool"
         class="amenity-logo h-5"
       />
@@ -101,7 +101,7 @@
     </div>
     <div class="amenity flex">
       <img
-        src="https://banner2.cleanpng.com/20180628/uyg/kisspng-check-mark-desktop-wallpaper-united-states-clip-ar-mace-5b35a3d2e8ccf8.5158420815302420029536.jpg"
+        src="https://e7.pngegg.com/pngimages/697/297/png-clipart-checkbox-icon-checkbox-button-tick-box-angle-text-thumbnail.png"
         alt="Swimming Pool"
         class="amenity-logo h-5"
       />
@@ -109,7 +109,7 @@
     </div>
     <div class="amenity flex">
       <img
-        src="https://banner2.cleanpng.com/20180628/uyg/kisspng-check-mark-desktop-wallpaper-united-states-clip-ar-mace-5b35a3d2e8ccf8.5158420815302420029536.jpg"
+        src="https://e7.pngegg.com/pngimages/697/297/png-clipart-checkbox-icon-checkbox-button-tick-box-angle-text-thumbnail.png"
         alt="Swimming Pool"
         class="amenity-logo h-5"
       />
@@ -117,7 +117,7 @@
     </div>
     <div class="amenity flex">
       <img
-        src="https://banner2.cleanpng.com/20180628/uyg/kisspng-check-mark-desktop-wallpaper-united-states-clip-ar-mace-5b35a3d2e8ccf8.5158420815302420029536.jpg"
+        src="https://e7.pngegg.com/pngimages/697/297/png-clipart-checkbox-icon-checkbox-button-tick-box-angle-text-thumbnail.png"
         alt="Swimming Pool"
         class="amenity-logo h-5"
       />

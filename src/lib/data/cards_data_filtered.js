@@ -3,7 +3,7 @@ export const cardsDataFiltered = [
     id: '4',
     title: 'Bishop Retirement Community',
     cost: '4,000',
-    living: ['independent', 'assisted', 'memory care', 'skilled nursing'],
+    living: ['independent', 'memory care', 'skilled nursing'],
     rating: '4.9 (9)',
     imageUrl:
       'https://scjeda.com/assets/uploads/2023/03/banner-Bishop-Gadsden-2023.jpg',
@@ -36,7 +36,6 @@ export const cardsDataFiltered = [
       'memory care',
       'rehabilitation',
       'respite care',
-      'skilled nursing',
     ],
     rating: '4.0 (10)',
     imageUrl: 'https://well-more.com/wm/images/hero/webp/nobadge-wlx-hero.webp',

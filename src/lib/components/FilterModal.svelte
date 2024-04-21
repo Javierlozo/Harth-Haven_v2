@@ -49,15 +49,15 @@
         <div class="checkbox-box">
           <div class="checkbox-title">
             <input type="checkbox" id="private-rooms" name="private-rooms" />
-            <label for="private-rooms">Private rooms</label><br />
+            <label for="private-rooms">Pickleball Court</label><br />
           </div>
           <div class="checkbox-title">
             <input type="checkbox" id="meal-services" name="meal-services" />
-            <label for="meal-services">Meal services</label><br />
+            <label for="meal-services">Swimming Pool</label><br />
           </div>
           <div class="checkbox-title">
             <input type="checkbox" id="housekeeping" name="housekeeping" />
-            <label for="housekeeping">Housekeeping</label><br />
+            <label for="housekeeping">Game Room</label><br />
           </div>
           <div class="checkbox-title">
             <input
@@ -128,10 +128,6 @@
               name="laundry-services"
             />
             <label for="laundry-services">Laundry services</label><br />
-          </div>
-          <div class="checkbox-title">
-            <input type="checkbox" id="wifi-access" name="wifi-access" />
-            <label for="wifi-access">Wi-Fi access</label><br />
           </div>
         </div>
         <div class="title">Accessibility features</div>

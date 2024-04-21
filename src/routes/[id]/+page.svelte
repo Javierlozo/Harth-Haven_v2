@@ -10,6 +10,14 @@
 <!-- SECTION 1 - ABOUT US -->
 <section class="section1 mt-20">
   <h1 class="font-bold" style="font-size: 30px;">Harmony at West Ashley</h1>
+  <div class="starGroup">
+    <div class="mr-8"><b style="font-size: 20px">Average of 4.8</b></div>
+    <img src="{star}" alt="star" class="starImage" />
+    <img src="{star}" alt="star" class="starImage" />
+    <img src="{star}" alt="star" class="starImage" />
+    <img src="{star}" alt="star" class="starImage" />
+    <img src="{star}" alt="star" class="starImage" />
+  </div>
 </section>
 
 <!-- SECTION 2 -->
@@ -51,20 +59,14 @@
     Amazing community in the heart of West Ashley
   </h1>
   <div class="mt-6" style="font-size: 20px;"><b>Starting at $3,000</b></div>
-  <div class="cardRating">
-    <div class="starGroup mt-10">
-      <img src="{star}" alt="star" class="starImage" />
-      <img src="{star}" alt="star" class="starImage" />
-      <img src="{star}" alt="star" class="starImage" />
-      <img src="{star}" alt="star" class="starImage" />
-      <img src="{star}" alt="star" class="starImage" />
-    </div>
-    <div style="color: green;"><b style="font-size: 50px">4.8</b></div>
-  </div>
 </section>
 
-<section class="section4 mt-20 mb-20">
-  <div>
+<section class="section4 my-20">
+  <h1 class="font-bold my-15 mb-5" style="font-size: 20px;">
+    About the facilities
+  </h1>
+
+  <div class="mt-5">
     Harmony at West Ashley is a vibrant community nestled in the heart of West
     Ashley. With modern amenities and a welcoming atmosphere, it's the perfect
     place to call home. Whether you're enjoying the scenic views, taking a dip
@@ -73,15 +75,73 @@
     Harmony at West Ashley!
   </div>
 </section>
+
+<section class="section4 mb-20">
+  <h1 class="font-bold my-15 mb-5" style="font-size: 20px;">Amenities</h1>
+  <div class="grid grid-cols-2 gap-8">
+    <div class="amenity flex">
+      <img
+        src="https://banner2.cleanpng.com/20180628/uyg/kisspng-check-mark-desktop-wallpaper-united-states-clip-ar-mace-5b35a3d2e8ccf8.5158420815302420029536.jpg"
+        alt="Pickleball Court"
+        class="amenity-logo h-5"
+      />
+      <div class="amenity-name">Pickleball Court</div>
+    </div>
+    <div class="amenity flex">
+      <img
+        src="https://banner2.cleanpng.com/20180628/uyg/kisspng-check-mark-desktop-wallpaper-united-states-clip-ar-mace-5b35a3d2e8ccf8.5158420815302420029536.jpg"
+        alt="Swimming Pool"
+        class="amenity-logo h-5"
+      />
+      <div class="amenity-name">Swimming Pool</div>
+    </div>
+    <div class="amenity flex">
+      <img
+        src="https://banner2.cleanpng.com/20180628/uyg/kisspng-check-mark-desktop-wallpaper-united-states-clip-ar-mace-5b35a3d2e8ccf8.5158420815302420029536.jpg"
+        alt="Swimming Pool"
+        class="amenity-logo h-5"
+      />
+      <div class="amenity-name">Game Room</div>
+    </div>
+    <div class="amenity flex">
+      <img
+        src="https://banner2.cleanpng.com/20180628/uyg/kisspng-check-mark-desktop-wallpaper-united-states-clip-ar-mace-5b35a3d2e8ccf8.5158420815302420029536.jpg"
+        alt="Swimming Pool"
+        class="amenity-logo h-5"
+      />
+      <div class="amenity-name">Medication management</div>
+    </div>
+    <div class="amenity flex">
+      <img
+        src="https://banner2.cleanpng.com/20180628/uyg/kisspng-check-mark-desktop-wallpaper-united-states-clip-ar-mace-5b35a3d2e8ccf8.5158420815302420029536.jpg"
+        alt="Swimming Pool"
+        class="amenity-logo h-5"
+      />
+      <div class="amenity-name">Personal care assistance</div>
+    </div>
+    <div class="amenity flex">
+      <img
+        src="https://banner2.cleanpng.com/20180628/uyg/kisspng-check-mark-desktop-wallpaper-united-states-clip-ar-mace-5b35a3d2e8ccf8.5158420815302420029536.jpg"
+        alt="Swimming Pool"
+        class="amenity-logo h-5"
+      />
+      <div class="amenity-name">Transportation services</div>
+    </div>
+  </div>
+</section>
+
 <section>
   <hr />
 </section>
+
 <section class="section5 mt-20">
-  <h1 class="font-bold my-15" style="font-size: 20px;">Reviews</h1>
+  <h1 class="font-bold my-15 mb-5" style="font-size: 20px;">Reviews</h1>
   <div>
-    <div class="mt-5" style="font-size: 20px;">Margaret Simpson</div>
+    <div class="mt-5 font-semibold" style="font-size: 20px;">
+      Margaret Simpson
+    </div>
     <div class="mt-3">★★★★★ (5.0)</div>
-    <div class="mt-3">
+    <div class="mt-3 font-serif">
       “I can’t express how delighted I am with Harmony Retirement Home! Since
       moving in, I’ve found a second family among both the residents and the
       staff. The activities are truly catered to what we love doing, and the
@@ -90,9 +150,11 @@
     </div>
   </div>
   <div class="mt-10">
-    <div class="mt-5" style="font-size: 20px;">James O’Connor</div>
+    <div class="mt-5 font-semibold" style="font-size: 20px;">
+      James O’Connor
+    </div>
     <div class="mt-3">★★★★★ (4.6)</div>
-    <div class="mt-3">
+    <div class="mt-3 font-serif">
       “Harmony has been a wonderful place for my grandmother. She loves the
       weekly musical nights and has made so many friends in the book club. The
       staff is always on hand to assist with anything she needs, making us feel
@@ -101,9 +163,9 @@
     </div>
   </div>
   <div class="mt-10">
-    <div class="mt-5" style="font-size: 20px;">Alice Cheng</div>
+    <div class="mt-5 font-semibold" style="font-size: 20px;">Alice Cheng</div>
     <div class="mt-3">★★★★★ (4.8)</div>
-    <div class="mt-3">
+    <div class="mt-3 font-serif">
       “Moving to Harmony Retirement Home was the best decision I made
       post-retirement. The facilities are top-notch, the food is just like
       homemade, and there’s always something to keep you engaged. From yoga
@@ -131,6 +193,12 @@
     justify-content: center;
     align-items: center;
   }
+  .section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
   hr {
     width: 60%;
     border-top: 1px solid black;
@@ -138,16 +206,16 @@
   .section2 {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
     margin-top: 30px;
   }
   .section2 img {
-    width: 300px;
+    width: 420px;
     height: 300px;
   }
   .section4 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-left: 400px;
     margin-right: 400px;
   }
@@ -157,18 +225,19 @@
     margin-left: 400px;
     margin-right: 400px;
   }
-  .cardRating {
+  /* .cardRating {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3px;
     margin-top: 5px;
-  }
+  } */
   .starImage {
-    height: 50px;
+    height: 30px;
   }
   .starGroup {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 </style>

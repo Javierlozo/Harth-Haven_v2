@@ -30,7 +30,7 @@ export const cardsData = [
     id: '4',
     title: 'Bishop Retirement Community',
     cost: '4,000',
-    living: ['independent', 'assisted', 'memory care', 'skilled nursing'],
+    living: ['independent', 'memory care', 'skilled nursing'],
     rating: '4.9 (9)',
     imageUrl:
       'https://scjeda.com/assets/uploads/2023/03/banner-Bishop-Gadsden-2023.jpg',
@@ -57,7 +57,7 @@ export const cardsData = [
     id: '7',
     title: 'Kempton of Charleston',
     cost: '3,800',
-    living: ['independent', 'assisted', 'memory care', 'skilled nursing'],
+    living: ['independent', 'assisted', 'memory care'],
     rating: '4.5 (8)',
     imageUrl:
       'https://cdn-lfakn.nitrocdn.com/VIzoUsufXYxbCZHvXbEoyEDUWxshrrZt/assets/images/optimized/rev-88caed5/www.kemptonofcharleston.com/wp-content/uploads/banner-twilight.jpg',

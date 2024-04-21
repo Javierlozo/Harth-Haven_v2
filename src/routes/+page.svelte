@@ -40,6 +40,11 @@
   <div>Finding the best senior care for the people that matter most.</div>
 </section>
 
+<section class="mb-8">
+  <div style="font-size: 28px; font-family: 'Times New Roman', Times, serif;">
+    Let's get started
+  </div>
+</section>
 <!-- SECTION 2 -->
 <section class="section2">
   <input
@@ -120,8 +125,8 @@
     justify-content: center;
     align-items: center;
     padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
   .filterButton {
     display: flex;

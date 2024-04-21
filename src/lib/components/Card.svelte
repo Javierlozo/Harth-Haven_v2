@@ -11,27 +11,32 @@
       {home.title}
     </div>
     <div class="cardPrice">
-      {home.price}
+      $ {home.cost}
     </div>
     <div class="cardContent">
-      {home.content}
+      {#each home.living as item}
+        <div class="chip">{item}</div>
+      {/each}
     </div>
   </div>
 </a>
 
 <style>
   .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
     color: inherit;
     width: 100%;
   }
 
   .card-image {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     justify-content: center;
     background-color: white;
     border: 1px solid #e8e8e8;
@@ -50,8 +55,28 @@
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     justify-content: center;
     gap: 5px;
+  }
+  .cardTitle {
+    font-size: medium;
+  }
+  .cardPrice {
+    font-size: medium;
+  }
+  .chip {
+    display: inline-block;
+    font-size: x-small;
+    padding: 6px 12px;
+    background-color: #4e4040;
+    color: white;
+    border-radius: 16px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  .cardContent {
+    justify-self: center;
   }
 </style>

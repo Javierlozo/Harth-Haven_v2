@@ -28,7 +28,8 @@ export const cardsData = [
     title: 'Bishop Gadsden Episcopal Retirement Community',
     cost: '4,081',
     living: ['independent', 'assisted', 'memory care', 'skilled nursing'],
-    imageUrl: '',
+    imageUrl:
+      'https://scjeda.com/assets/uploads/2023/03/banner-Bishop-Gadsden-2023.jpg',
   },
   {
     id: '5',

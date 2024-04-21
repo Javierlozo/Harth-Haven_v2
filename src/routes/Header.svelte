@@ -1,14 +1,12 @@
 <script>
   import { page } from '$app/stores';
-  import logo from '$lib/images/HH_LogoType.png';
+  //   import Logo from '$lib/components/HH-LogoTrail2.svelte';
   import LoginLogo from '$lib/images/LogIn.svelte';
 </script>
 
 <header>
-  <div class="corner">
-    <a href="/">
-      <img src="{logo}" alt="SvelteKit" />
-    </a>
+  <div class="logo">
+    <!-- <Logo /> -->
   </div>
 
   <!-- <nav>
@@ -53,11 +51,8 @@
     width: 100%;
     height: 100%;
   }
-
-  .corner img {
-    width: 200px;
-    object-fit: contain;
-    padding-left: 150px;
+  .logo {
+    width: 150px;
   }
 
   /* nav {

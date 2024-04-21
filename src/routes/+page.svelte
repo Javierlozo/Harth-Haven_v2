@@ -65,7 +65,7 @@
 </section>
 
 <!-- SECTION 3 -->
-<section>
+<section class="section3">
   <div class="cardComponent">
     {#each filteredHomes as home (home.id)}
       <Card home="{home}" />
@@ -92,10 +92,10 @@
   }
   .cardComponent {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 20px;
-    align-content: space-evenly;
-    margin-top: 100px;
+    grid-template-columns: repeat(4, minmax(0, 0.7fr));
+    gap: 30px;
+    margin-top: 32px;
+    justify-content: center;
   }
   .section1 {
     display: flex;
@@ -108,6 +108,15 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
+  }
+  .section3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .filterButton {
     display: flex;
@@ -130,16 +139,22 @@
   .filterButton:hover {
     background-color: lightgray;
   }
-  /* @media only screen and (min-width: 481px) and (max-width: 1300px) {
+  @media only screen and (min-width: 1290px) and (max-width: 1600px) {
     .cardComponent {
-      flex-direction: column;
-      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 0.7fr));
+      gap: 30px;
+      margin-top: 32px;
+      justify-content: center;
     }
   }
   @media only screen and (max-width: 480px) {
     .cardComponent {
-      flex-direction: column;
-      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 0.7fr));
+      gap: 30px;
+      margin-top: 32px;
+      justify-content: center;
     }
-  } */
+  }
 </style>

@@ -86,7 +86,7 @@
   .cardComponent {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 0.7fr));
-    gap: 30px;
+    gap: 50px;
     margin-top: 32px;
     justify-content: center;
   }

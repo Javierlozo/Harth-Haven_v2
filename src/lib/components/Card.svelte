@@ -1,4 +1,5 @@
 <script>
+  import star from '$lib/images/start.jpg';
   export let home;
 </script>
 
@@ -7,8 +8,14 @@
     <img src="{home.imageUrl}" alt="{home.title}" class="image" />
   </div>
   <div class="card-title">
-    <div class="cardTitle">
-      {home.title}
+    <div class="cardTitle-Rating">
+      <div class="cardTitle">
+        {home.title}
+      </div>
+      <div class="cardRating">
+        <img src="{star}" alt="star" class="starImage" />
+        <b>{home.rating}</b>
+      </div>
     </div>
     <div class="cardPrice">
       Starting at: <b>${home.cost}</b>
@@ -39,19 +46,35 @@
     overflow: hidden;
   }
 
+  .cardTitle-Rating {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .cardRating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+  }
+
   .image {
     width: 100%; /* Make the image occupy the entire width of its container */
     height: 100%; /* Make the image occupy the entire height of its container */
     object-fit: cover;
   }
 
+  .starImage {
+    height: 14px;
+  }
+
   .card-title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 20px;
-    display: flex;
     gap: 10px;
   }
   .cardTitle {

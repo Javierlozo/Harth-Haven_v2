@@ -6,7 +6,9 @@
 
 <header>
   <div class="logo">
-    <img src="{Logo}" alt="Logo" />
+    <a href="/">
+      <img src="{Logo}" alt="Logo" />
+    </a>
   </div>
 
   <!-- <nav>
@@ -35,7 +37,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .corner {

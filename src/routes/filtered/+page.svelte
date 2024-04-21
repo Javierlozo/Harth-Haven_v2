@@ -1,10 +1,8 @@
 <script>
   // @ts-nocheck
-  import Card from '$lib/components/Card.svelte';
+  import Card2 from '$lib/components/Card.svelte';
   import FilterModal from '$lib/components/FilterModal.svelte';
   import filter from '$lib/images/filter-32.png';
-  import { onDestroy } from 'svelte';
-  import { createSearchStore, searchHandler } from '$lib/stores/search';
 
   // Modal
   let showModal = false;
@@ -12,28 +10,23 @@
   // exports
   export let data;
 
-  const searchProducts = data.homes.map((home) => ({
-    ...home,
-    searchTerms: `${home.living} ${home.title} ${home.price}`,
-  }));
+  // const searchProducts = data.homes.map((home) => ({
+  //   ...home,
+  //   searchTerms: `${home.living} ${home.title} ${home.price}`,
+  // }));
 
-  const searchStore = createSearchStore(searchProducts);
+  // const searchStore = createSearchStore(searchProducts);
 
-  const unsubscribe = searchStore.subscribe((model) => {
-    searchHandler(model);
-  });
+  // const unsubscribe = searchStore.subscribe((model) => {
+  //   searchHandler(model);
+  // });
 
-  $: filteredHomes = $searchStore.filtered;
+  // $: filteredHomes = $searchStore.filtered;
 
-  onDestroy(() => {
-    unsubscribe();
-  });
+  // onDestroy(() => {
+  //   unsubscribe();
+  // });
 </script>
-
-<svelte:head>
-  <title>HarthHaven</title>
-  <meta name="HarthHaven" content="Svelte demo app" />
-</svelte:head>
 
 <!-- SECTION 1 - ABOUT US -->
 <section class="section1">
@@ -48,7 +41,6 @@
     class="search"
     placeholder="Search"
     required
-    bind:value="{$searchStore.search}"
   />
 
   <button class="filterButton" on:click="{() => (showModal = true)}">
@@ -60,8 +52,8 @@
 <!-- SECTION 3 -->
 <section class="section3">
   <div class="cardComponent">
-    {#each filteredHomes as home (home.id)}
-      <Card home="{home}" />
+    {#each data.homes as home}
+      <Card2 home="{home}" />
     {/each}
   </div>
 </section>

@@ -13,7 +13,7 @@ export const cardsData = [
     title: 'Harmony at West Ashley',
     cost: '3,000',
     living: ['independent', 'assisted', 'memory care'],
-    rating: '4.8 (3)',
+    rating: '4.0 (3)',
     imageUrl:
       'https://g5-assets-cld-res.cloudinary.com/image/upload/x_268,y_338,h_2902,w_4837,c_crop/q_auto,f_auto,c_fill,g_center,h_1200,w_2000/v1652715863/g5/g5-c-5j0l7ya37-harmony-senior-services/g5-cl-1jjrezbx53-harmony-at-west-ashley/uploads/CAWA_Building_ofeuwy.jpg',
   },

@@ -88,12 +88,13 @@
     display: inline-block;
     font-size: x-small;
     padding: 6px 12px;
-    background-color: #4e4040;
-    color: white;
+    background-color: #ffe5b4;
+    color: black;
     border-radius: 16px;
     margin-right: 5px;
     margin-bottom: 5px;
     text-transform: uppercase;
+    font-weight: bold;
   }
   /* .cardContent {
     display: flex;

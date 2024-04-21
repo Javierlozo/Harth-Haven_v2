@@ -1,7 +1,10 @@
 <button id="myButton" class="card-Component card">
   <div class="card-title">
-    <div class="cardTitle">Luxe</div>
-    <div class="cardDescription">Extraordinary</div>
+    <div class="cardTitle">Luxury</div>
+    <div class="cardDescription">
+      The most luxurious retirement homes on HearthHaven, according to unbiased
+      ratings by residents
+    </div>
   </div>
 </button>
 
@@ -42,5 +45,9 @@
 
   .cardDescription {
     font-size: medium;
+  }
+  #myButton:hover {
+    cursor: pointer;
+    background-color: grey; /* Darken the background color on hover */
   }
 </style>

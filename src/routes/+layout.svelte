@@ -11,9 +11,9 @@
   </main>
 
   <footer>
-    <p>Terms of Use</p>
+    <!-- <p>Terms of Use</p>
     <p>Privacy Policy</p>
-    <p>Cookie Information</p>
+    <p>Cookie Information</p> -->
   </footer>
 </div>
 
@@ -22,6 +22,9 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: url('../lib/components/Wallpaper.svg') no-repeat center center
+      fixed;
+    background-size: cover;
   }
 
   main {
@@ -34,14 +37,7 @@
   }
 
   footer {
-    display: flex;
-    align-items: center;
-    padding: 12px;
-    background-color: beige;
-    font-size: small;
     margin-top: 40px;
-    flex-direction: row;
-    justify-content: space-around;
   }
 
   @media (min-width: 480px) {

@@ -9,13 +9,13 @@ export const cardsDataFiltered = [
       'https://scjeda.com/assets/uploads/2023/03/banner-Bishop-Gadsden-2023.jpg',
   },
   {
-    id: '6',
-    title: 'The Palms of Mount Pleasant ',
-    cost: '4,100',
-    living: ['independent', 'assisted', 'memory care', 'respite care'],
-    rating: '4.6 (7)',
+    id: '2',
+    title: 'Harmony at West Ashley',
+    cost: '3,000',
+    living: ['independent', 'assisted', 'memory care', 'skilled nursing'],
+    rating: '4.0 (3)',
     imageUrl:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUDQk0PhP_BrXioCY1IM-20cmSrH7Bg-Q_6e1plxVIVg&s',
+      'https://g5-assets-cld-res.cloudinary.com/image/upload/x_268,y_338,h_2902,w_4837,c_crop/q_auto,f_auto,c_fill,g_center,h_1200,w_2000/v1652715863/g5/g5-c-5j0l7ya37-harmony-senior-services/g5-cl-1jjrezbx53-harmony-at-west-ashley/uploads/CAWA_Building_ofeuwy.jpg',
   },
   {
     id: '7',

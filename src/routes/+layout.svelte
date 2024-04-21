@@ -37,7 +37,7 @@
   }
 
   footer {
-    margin-top: 40px;
+    margin-top: 80px;
   }
 
   @media (min-width: 480px) {

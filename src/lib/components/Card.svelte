@@ -1,9 +1,8 @@
 <script>
-  import star from '$lib/images/start.jpg';
   export let home;
 </script>
 
-<a href="{home.title}" class="card">
+<a href="/filtered/{home.title}" class="card">
   <div class="card-image">
     <img src="{home.imageUrl}" alt="{home.title}" class="image" />
   </div>

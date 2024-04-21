@@ -74,8 +74,8 @@
 
 <section class="section4 mb-20">
   <h1 class="font-bold my-15 mb-10" style="font-size: 20px;">Amenities</h1>
-  <div class="grid grid-cols-2 gap-8">
-    <div class="amenity flex">
+  <div class="grid grid-cols-3 gap-8">
+    <div class="amenity flex mr-40">
       <img
         src="https://e7.pngegg.com/pngimages/697/297/png-clipart-checkbox-icon-checkbox-button-tick-box-angle-text-thumbnail.png"
         alt="Pickleball Court"

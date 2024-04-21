@@ -12,10 +12,7 @@
   <h1 class="font-bold" style="font-size: 30px;">Harmony at West Ashley</h1>
   <div class="starGroup">
     <div class="mr-8"><b style="font-size: 20px">Average of 4.0</b></div>
-    <img src="{star}" alt="star" class="starImage" />
-    <img src="{star}" alt="star" class="starImage" />
-    <img src="{star}" alt="star" class="starImage" />
-    <img src="{star}" alt="star" class="starImage" />
+    <div><b style="font-size: 30px">★★★★</b></div>
   </div>
 </section>
 
@@ -76,7 +73,7 @@
 </section>
 
 <section class="section4 mb-20">
-  <h1 class="font-bold my-15 mb-5" style="font-size: 20px;">Amenities</h1>
+  <h1 class="font-bold my-15 mb-10" style="font-size: 20px;">Amenities</h1>
   <div class="grid grid-cols-2 gap-8">
     <div class="amenity flex">
       <img

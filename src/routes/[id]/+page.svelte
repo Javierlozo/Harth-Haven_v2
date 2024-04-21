@@ -11,12 +11,8 @@
 <section class="section1 mt-20">
   <h1 class="font-bold" style="font-size: 30px;">Harmony at West Ashley</h1>
   <div class="starGroup">
-    <div class="mr-8"><b style="font-size: 20px">Average of 4.8</b></div>
-    <img src="{star}" alt="star" class="starImage" />
-    <img src="{star}" alt="star" class="starImage" />
-    <img src="{star}" alt="star" class="starImage" />
-    <img src="{star}" alt="star" class="starImage" />
-    <img src="{star}" alt="star" class="starImage" />
+    <div class="mr-8"><b style="font-size: 20px">Average of 4.0</b></div>
+    <div><b style="font-size: 30px">★★★★</b></div>
   </div>
 </section>
 
@@ -140,7 +136,7 @@
     <div class="mt-5 font-semibold" style="font-size: 20px;">
       Margaret Simpson
     </div>
-    <div class="mt-3">★★★★★ (5.0)</div>
+    <div class="mt-3">★★★★ (4.0)</div>
     <div class="mt-3 font-serif">
       “I can’t express how delighted I am with Harmony Retirement Home! Since
       moving in, I’ve found a second family among both the residents and the
@@ -153,7 +149,7 @@
     <div class="mt-5 font-semibold" style="font-size: 20px;">
       James O’Connor
     </div>
-    <div class="mt-3">★★★★★ (4.6)</div>
+    <div class="mt-3">★★★★ (4.0)</div>
     <div class="mt-3 font-serif">
       “Harmony has been a wonderful place for my grandmother. She loves the
       weekly musical nights and has made so many friends in the book club. The
@@ -164,7 +160,7 @@
   </div>
   <div class="mt-10">
     <div class="mt-5 font-semibold" style="font-size: 20px;">Alice Cheng</div>
-    <div class="mt-3">★★★★★ (4.8)</div>
+    <div class="mt-3">★★★★ (4.0)</div>
     <div class="mt-3 font-serif">
       “Moving to Harmony Retirement Home was the best decision I made
       post-retirement. The facilities are top-notch, the food is just like

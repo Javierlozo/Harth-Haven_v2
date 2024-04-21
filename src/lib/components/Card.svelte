@@ -13,7 +13,7 @@
         {home.title}
       </div>
       <div class="cardRating">
-        <img src="{star}" alt="star" class="starImage" />
+        <div><b style="font-size: 20px">★</b></div>
         <b>{home.rating}</b>
       </div>
     </div>
@@ -49,6 +49,8 @@
   .cardTitle-Rating {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 50px;
   }
 

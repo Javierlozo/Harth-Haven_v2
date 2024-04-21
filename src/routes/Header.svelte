@@ -1,12 +1,12 @@
 <script>
   import { page } from '$app/stores';
-  //   import Logo from '$lib/components/HH-LogoTrail2.svelte';
+  import Logo from '$lib/images/HH_LogoType.png';
   import LoginLogo from '$lib/images/LogIn.svelte';
 </script>
 
 <header>
   <div class="logo">
-    <!-- <Logo /> -->
+    <img src="{Logo}" alt="Logo" />
   </div>
 
   <!-- <nav>
@@ -33,15 +33,14 @@
 <style>
   header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    background-color: bisque;
+    padding: 20px;
   }
 
   .corner {
     width: 50px;
     height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .corner a {

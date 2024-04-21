@@ -2,7 +2,7 @@
   export let home;
 </script>
 
-<a href="{home.id}" class="card">
+<a href="{home.title}" class="card">
   <div class="card-image">
     <img src="{home.imageUrl}" alt="{home.title}" class="image" />
   </div>
@@ -11,7 +11,7 @@
       {home.title}
     </div>
     <div class="cardPrice">
-      $ {home.cost}
+      Starting at: <b>${home.cost}</b>
     </div>
     <div class="cardContent">
       {#each home.living as item}
@@ -61,6 +61,7 @@
   }
   .cardTitle {
     font-size: medium;
+    font-weight: bold;
   }
   .cardPrice {
     font-size: medium;
@@ -76,7 +77,10 @@
     margin-bottom: 5px;
     text-transform: uppercase;
   }
-  .cardContent {
-    justify-self: center;
-  }
+  /* .cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } */
 </style>

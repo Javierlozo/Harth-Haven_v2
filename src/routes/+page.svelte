@@ -19,7 +19,7 @@
 
   const searchProducts = data.homes.map((home) => ({
     ...home,
-    searchTerms: `${home.id} ${home.title} ${home.price}`,
+    searchTerms: `${home.living} ${home.title} ${home.price}`,
   }));
 
   const searchStore = createSearchStore(searchProducts);
@@ -42,9 +42,8 @@
 
 <!-- SECTION 1 - ABOUT US -->
 <section class="section1">
-  <h1>
-    WELCOME TO<br /> TO HEARTH HAVEN
-  </h1>
+  <div>Finding the best senior care for</div>
+  <div>the people that matter most.</div>
 </section>
 
 <!-- SECTION 2 -->
@@ -99,9 +98,13 @@
   }
   .section1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
+    font-size: 70px;
+    gap: 5px;
+    padding-top: 40px;
+    padding-bottom: 80px;
   }
   .section2 {
     display: flex;
@@ -143,16 +146,34 @@
     .cardComponent {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 0.7fr));
-      gap: 30px;
+      gap: 40px;
       margin-top: 32px;
       justify-content: center;
     }
   }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (min-width: 1130px) and (max-width: 1289px) {
     .cardComponent {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 0.7fr));
-      gap: 30px;
+      grid-template-columns: repeat(3, minmax(0, 0.7fr));
+      gap: 40px;
+      margin-top: 32px;
+      justify-content: center;
+    }
+  }
+  @media only screen and (min-width: 745px) and (max-width: 1129px) {
+    .cardComponent {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 0.7fr));
+      gap: 40px;
+      margin-top: 32px;
+      justify-content: center;
+    }
+  }
+  @media only screen and (max-width: 744px) {
+    .cardComponent {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 0.7fr));
+      gap: 40px;
       margin-top: 32px;
       justify-content: center;
     }

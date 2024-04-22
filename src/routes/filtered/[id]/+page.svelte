@@ -44,7 +44,7 @@
     alt="Something 2"
   />
   <img
-    src="  https://g5-assets-cld-res.cloudinary.com/image/upload/q_auto,f_auto,c_fill,g_center,h_665,w_998/v1647281355/g5/g5-c-5j0l7ya37-harmony-senior-services/g5-cl-1jjrezbx53-harmony-at-west-ashley/uploads/13_tutu9b.jpg"
+    src="https://g5-assets-cld-res.cloudinary.com/image/upload/q_auto,f_auto,c_fill,g_center,h_665,w_998/v1647281355/g5/g5-c-5j0l7ya37-harmony-senior-services/g5-cl-1jjrezbx53-harmony-at-west-ashley/uploads/13_tutu9b.jpg"
     alt="Something 2"
   />
 </section>

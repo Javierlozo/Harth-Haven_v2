@@ -57,6 +57,12 @@
   <div class="mt-6" style="font-size: 20px;"><b>Starting at $3,000</b></div>
 </section>
 
+<section class="section3">
+  <div class="mt-6" style="font-size: 30px; color: green;">
+    <b>Available!</b>
+  </div>
+</section>
+
 <section class="section4 my-20">
   <h1 class="font-bold my-15 mb-5" style="font-size: 20px;">
     About the facilities

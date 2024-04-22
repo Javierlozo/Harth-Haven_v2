@@ -1,6 +1,11 @@
+<script>
+	import { page } from '$app/stores';
+</script>
+
 <body>
 	<div class="error-container">
 		<h1 class="error-code">404</h1>
+		<h1>{$page.error.message}</h1>
 		<p class="error-message">Oops! Something went wrong.</p>
 	</div>
 </body>
